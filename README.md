@@ -4,12 +4,14 @@
 
 ### GraphQL Client
 
+
+* How to start ?
 ```
-npm start
+node graphql-client.js
 Open http://localhost:4000/
 ```
 
-> Client Query
+* Client Query
 
 ```graphql
 {
@@ -26,7 +28,7 @@ Open http://localhost:4000/
 }
 ```
 
-> Client Mutation
+* Client Mutation
 
 ```graphql
 mutation{
@@ -59,3 +61,6 @@ mutation{
 
 
 ### GraphQL Server
+
+* How to start ?
+node graphql-server.js
