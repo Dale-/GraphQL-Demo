@@ -9,7 +9,7 @@
 > GraphQL is a new way to think about building and querying APIs. Rather than construct several REST requests to fetch data that you’re interested in, you can often make a single call to fetch the information you need.
 
 ### Schemas & Types
-[Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
+* [Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
 
 ### GraphQL Client
 
