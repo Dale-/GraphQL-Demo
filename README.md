@@ -11,7 +11,7 @@ Open http://localhost:4000/
 
 > Client Query
 
-```
+```graphql
 {
   user(id:0) {
     name
@@ -28,7 +28,7 @@ Open http://localhost:4000/
 
 > Client Mutation
 
-```
+```graphql
 mutation{
   addUser(
     account: "demo",
@@ -57,6 +57,5 @@ mutation{
 }
 ```
 
-Anytime you change the contents, just refresh the page and it's going to be updated.
 
 ### GraphQL Server
