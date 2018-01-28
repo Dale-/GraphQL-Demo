@@ -35,9 +35,9 @@ var users=[
       password: 'SeedlinkTech'
     },
     {
-      account: 'Dale0326',
-      email: 'ying.du@seedlinktech.com',
-      name: 'DaleDu',
+      account: 'Renee0326',
+      email: 'renee@seedlinktech.com',
+      name: 'Renee',
       password: 'SeedlinkTech'
     },
 ];
@@ -52,7 +52,7 @@ var root= {
         return users;
     },
     //mutation resolver
-    addUser:function({name,sex,intro,skills}){
+    addUser:function({account,email,name,password}){
         var user={
             account:account,
             email:email,
