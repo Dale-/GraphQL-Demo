@@ -15,7 +15,7 @@
 
 * How to start ?
 ```
-node graphql-client.js
+node graphql-simple.js
 Open http://localhost:4000/
 ```
 
