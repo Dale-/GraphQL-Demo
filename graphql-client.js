@@ -45,14 +45,14 @@ var users=[
 // define resolver
 var root= {
     // query resolver
-    user: function ({id}) {
+    user: ({id}) => {
         return users[id];
     },
-    users: function () {
+    users: () => {
         return users;
     },
     //mutation resolver
-    addUser:function({account,email,name,password}){
+    addUser: ({account,email,name,password}) => {
         var user={
             account:account,
             email:email,
@@ -62,7 +62,7 @@ var root= {
         users.push(user);
         return user;
     },
-    addUserByInput:function({userInfo}){
+    addUserByInput: ({userInfo}) => {
         var user={
             account:userInfo.account,
             email:userInfo.email,
