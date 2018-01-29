@@ -23,15 +23,19 @@ Open http://localhost:4000/
 
 ```graphql
 {
-  user(id:0) {
+  user(id:1) {
     name
- 		email
+    email
+    account
     password
+    id
   }
   users {
     name
- 		email
+    email
+    account
     password
+    id
   }
 }
 ```
@@ -45,19 +49,6 @@ mutation{
     name: "demo",
     password: "demo1234",
     email: "demo@gmail.com"
-  ){
-    account
-    name
-    password
-    email
-  }
-  addUserByInput(
-    userInfo:{
-      account: "luna",
-      name: "luna",
-      password: "luna1234",
-      email: "luna@gmail.com"
-    }
   ){
     account
     name
