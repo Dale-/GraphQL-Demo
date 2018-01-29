@@ -22,7 +22,7 @@ Open http://localhost:4000/
 * Simple Query
 
 ```graphql
-{
+query {
   user(id:1) {
     name
     email
@@ -43,7 +43,7 @@ Open http://localhost:4000/
 * Simple Mutation
 
 ```graphql
-mutation{
+mutation {
   addUser(
     account: "demo",
     name: "demo",
@@ -61,7 +61,7 @@ mutation{
 ### GraphQL Normal
 
 ```graphql
-  {
+  query {
     user(id:0){
       name
       MM:stature(unit:MM)
