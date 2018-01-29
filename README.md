@@ -11,7 +11,7 @@
 ### Schemas & Types
 * [Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
 
-### GraphQL Client
+### GraphQL Simple
 
 * How to start ?
 ```
@@ -19,7 +19,7 @@ node graphql-simple.js
 Open http://localhost:4000/
 ```
 
-* Client Query
+* Simple Query
 
 ```graphql
 {
@@ -40,7 +40,7 @@ Open http://localhost:4000/
 }
 ```
 
-* Client Mutation
+* Simple Mutation
 
 ```graphql
 mutation{
@@ -57,6 +57,8 @@ mutation{
   }
 }
 ```
+
+### GraphQL Normal
 
 
 ### GraphQL Server

@@ -104,7 +104,7 @@ const Mutation = new GraphQLObjectType({
         intro: { type: new GraphQLNonNull(GraphQLString) },
         skills: { type: new GraphQLNonNull(new GraphQLList(GraphQLString)) },
       },
-      resolve: (source, { name, sex, intro, skills }) {
+      resolve: (source, { name, sex, intro, skills }) => {
         var user = {
           name: name,
           sex: sex,
