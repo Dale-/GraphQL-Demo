@@ -34,7 +34,7 @@ var users = [
 const Unit = new GraphQLEnumType({
   name: 'Unit',
   description: 'a single quantity regarded as a whole in calculation',
-  value: {
+  values: {
     MM: { value: 'MM' },
     CM: { value: 'CM' }
   }
@@ -48,14 +48,13 @@ const User = new GraphQLObjectType({
       name: { type: new GraphQLNonNull(GraphQLString) },
       sex: { type: new GraphQLNonNull(GraphQLString) },
       intro: { type: new GraphQLNonNull(GraphQLString) },
-      skill: { type: new GraphQLNonNull(GraphQLString) },
-      name: { type: new GraphQLNonNull( new GraphQLList(GraphQLString)) },
+      skills: { type: new GraphQLNonNull( new GraphQLList(GraphQLString)) },
       stature: {
         type: GraphQLFloat,
         args: {
           unit: { type: Unit }
         },
-        resolve: (user, { unit }) => {
+        resolve: (user, {unit}) => {
           if (unit === 'MM') {
             return user.stature / 100;
           } else {
