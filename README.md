@@ -60,6 +60,16 @@ mutation{
 
 ### GraphQL Normal
 
+```graphql
+  {
+    user(id:0){
+      name
+      MM:stature(unit:MM)
+      CM:stature(unit:CM)
+    }
+  }
+```
+
 
 ### GraphQL Server
 
