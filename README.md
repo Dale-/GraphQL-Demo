@@ -2,11 +2,11 @@
 
 ![](http://www.zhaiqianfeng.com/uploads/content/share/graphql.png)
 
-> Why is GitHub using GraphQL?
+> 什么是 GraphQL?
 
-> GitHub is moving to GraphQL for v4 of our API because it offers significantly more flexibility for our integrators. The ability to define precisely the data you want—and only the data you want—is a powerful advantage over the REST API v3 endpoints.
+GraphQL 为数据通信而生。你有一个客户端和一个服务器，它们需要相互通信。客户端需要告知服务器需要哪些数据，服务器需要用实际的数据来满足客户端的数据需求。GraphQL 是此种通信方式的中介。
 
-> GraphQL is a new way to think about building and querying APIs. Rather than construct several REST requests to fetch data that you’re interested in, you can often make a single call to fetch the information you need.
+![](/images/graphql-connect.png)
 
 ### Schemas & Types
 * [Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
@@ -77,3 +77,5 @@ mutation {
 ```
 node graphql-server.js
 ```
+
+### GraphQL vs. REST
