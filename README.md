@@ -84,6 +84,14 @@ query里面包含我们需要的所有数据
   }
 ```
 
+## GraphQL帮助我们解决RESTful哪些现有问题
+
+> 需要进行多次往返以获取视图所需的数据
+
+> 客户端与服务器端分离，独立进行开发和维护
+
+> 声明好前端需要的数据，不再为如何获取而写一些不必要的代码
+
 
 ## Schemas & Types
 * [Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
