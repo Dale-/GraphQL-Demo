@@ -8,9 +8,7 @@ GraphQL 为数据通信而生。你有一个客户端和一个服务器，它们
 
 ![](/images/graphql-connect.png)
 
-## GraphQL vs. REST
-
-### RESTful APIs vs GraphQL APIs — 示例
+## GraphQL vs. REST 示例
 
 > 需要的资源： 人物，星球和电影
 
@@ -34,13 +32,13 @@ GraphQL 为数据通信而生。你有一个客户端和一个服务器，它们
   }
 ```
 
-* RESTful API
+### RESTful API
 
 ```javascript
   GET - /people/{id}
 ```
 
-API返回的数据：
+API返回的数据:
 ```javascript
   {
     "name": "Darth Vader",
@@ -51,18 +49,41 @@ API返回的数据：
   }
 ```
 
-获取星球的名称
+获取星球的名称:
 ```javascript
   GET - /planets/1
 ```
 
-获取电影的名称
+获取电影的名称:
 ```javascript
   GET - /films/1
   GET - /films/2
   GET - /films/3
   GET - /films/6
 ```
+
+### GraphQL API
+
+```javascript
+  GET or POST - /graphql?query={...}
+```
+
+query里面包含我们需要的所有数据
+```javascript
+  {
+    person(ID: ...) {
+      name,
+      birthYear,
+      planet {
+        name
+      },
+      films {
+        title
+      }
+    }
+  }
+```
+
 
 ## Schemas & Types
 * [Schemas & Types](https://toddmotto.com/react-create-class-versus-component/#syntax-differences)
